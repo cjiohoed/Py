@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 protocol = 'socks5h'
 user = 'user'
 password = 'password'
