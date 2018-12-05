@@ -24,7 +24,7 @@ def parse(html):
     anekdots = []
 
     soup = BeautifulSoup(html, features="html.parser")
-    # soup = BeautifulSoup(str(html).replace('</br>', '\n'), features="html.parser")
+    # soup = BeautifulSoup(html.replace('<br/>', '\n'), features="html.parser")
     div_content = soup.find('div', class_='content')
     div_anekdots = div_content.find_all('div', class_='text')
 
