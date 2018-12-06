@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+hlp = "/start\tСтарт\n/about\tО Лосе"
+
 not_understand = "Я тебя не понимаю."
 
 filthy_lang = ("Прекращайте ругаться",
