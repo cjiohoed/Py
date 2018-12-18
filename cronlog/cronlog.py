@@ -11,7 +11,7 @@ def argParser():
     parser = ArgumentParser()
     parser.add_argument('-p', '--path')
     parser.add_argument('-n', '--name', type=str)
-    parser.add_argument('-c', '--count', default=10, type=int)
+    parser.add_argument('-c', '--count', default=100, type=int)
     return parser
 
 
@@ -45,6 +45,7 @@ if __name__ == "__main__":
     namespace = pars.parse_args(argument[1:])
     path2file = namespace.path
     find_str = namespace.name
-    last_lines = get_last_lines(path2file)
+    cnt = namespace.count
+    last_lines = get_last_lines(path2file, cnt)
     runtime = get_runtime(find_str, last_lines)
     print(runtime)
